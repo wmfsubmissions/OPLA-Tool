@@ -2662,7 +2662,7 @@ public class Principal extends AbstractPrincipalJFrame {
     private void ckFeatureInteractionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ckFeatureInteractionActionPerformed
        System.out.println("Feature Interaction ");
        String metric = Metrics.FEATURE_INTERACTION.getName();
-       addToMetrics(ckComponentCoupling, metric);
+       addToMetrics(ckFeatureInteraction, metric);
     }//GEN-LAST:event_ckFeatureInteractionActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
