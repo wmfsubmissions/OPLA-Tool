@@ -698,7 +698,7 @@
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="55" max="32767" attributes="0"/>
                                   <Component id="tfArchiveSize1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -754,7 +754,7 @@
                               <Component id="tfArchiveSize1" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace pref="35" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -874,9 +874,13 @@
                               <Component id="ckSVS" min="-2" max="-2" attributes="0"/>
                               <Component id="ckCBCS" min="-2" max="-2" attributes="0"/>
                               <Component id="ckWocsInterface" min="-2" max="-2" attributes="0"/>
-                              <Component id="ckWocsClass" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="ckWocsClass" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+                                  <Component id="ckFeatureInteraction" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace pref="227" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -888,6 +892,7 @@
                               <Component id="ckConventional" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="ckFeatureDriven" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="ckWocsClass" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="ckFeatureInteraction" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -1058,6 +1063,14 @@
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ckLLCActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="ckFeatureInteraction">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Feature Interaction"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ckFeatureInteractionActionPerformed"/>
                   </Events>
                 </Component>
               </SubComponents>
@@ -1494,7 +1507,7 @@
                                       <Component id="cbClusteringAlgorithm" alignment="0" max="32767" attributes="0"/>
                                       <Group type="102" attributes="0">
                                           <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="35" max="32767" attributes="0"/>
+                                          <EmptySpace min="0" pref="70" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace min="8" pref="8" max="-2" attributes="0"/>

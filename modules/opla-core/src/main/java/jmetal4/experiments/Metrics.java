@@ -5,6 +5,7 @@ public enum Metrics {
     CONVENTIONAL("conventional"),
     ELEGANCE("elegance"),
     FEATURE_DRIVEN("featureDriven"),
+    FEATURE_INTERACTION("feature_interaction"),
     PLA_EXTENSIBILIY("PLAExtensibility"),
     ACOMP("acomp"),
     ACLASS("aclass"),
