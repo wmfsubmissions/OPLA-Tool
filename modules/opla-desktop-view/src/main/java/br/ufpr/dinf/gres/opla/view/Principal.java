@@ -392,7 +392,6 @@ public class Principal extends AbstractPrincipalJFrame {
         ckSSC = new javax.swing.JCheckBox();
         ckAV = new javax.swing.JCheckBox();
         ckLLC = new javax.swing.JCheckBox();
-        ckFeatureInteraction = new javax.swing.JCheckBox();
         panelOperators = new javax.swing.JPanel();
         panelOperatorOption = new javax.swing.JPanel();
         jsMutation = new javax.swing.JSlider();
@@ -406,6 +405,7 @@ public class Principal extends AbstractPrincipalJFrame {
         ckMoveOperationMutation = new javax.swing.JCheckBox();
         ckAddManagerClassMutation = new javax.swing.JCheckBox();
         ckMoveAttributeMutation = new javax.swing.JCheckBox();
+        ckFeatureInteraction = new javax.swing.JCheckBox();
         jPanel12 = new javax.swing.JPanel();
         tfInputArchitecturePath = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
@@ -1035,13 +1035,6 @@ public class Principal extends AbstractPrincipalJFrame {
             }
         });
 
-        ckFeatureInteraction.setText("Feature Interaction");
-        ckFeatureInteraction.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ckFeatureInteractionActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
@@ -1069,11 +1062,8 @@ public class Principal extends AbstractPrincipalJFrame {
                     .addComponent(ckSVS)
                     .addComponent(ckCBCS)
                     .addComponent(ckWocsInterface)
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addComponent(ckWocsClass)
-                        .addGap(91, 91, 91)
-                        .addComponent(ckFeatureInteraction)))
-                .addContainerGap(227, Short.MAX_VALUE))
+                    .addComponent(ckWocsClass))
+                .addContainerGap(433, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1082,8 +1072,7 @@ public class Principal extends AbstractPrincipalJFrame {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ckConventional)
                     .addComponent(ckFeatureDriven)
-                    .addComponent(ckWocsClass)
-                    .addComponent(ckFeatureInteraction))
+                    .addComponent(ckWocsClass))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ckComponentCoupling)
@@ -1108,7 +1097,7 @@ public class Principal extends AbstractPrincipalJFrame {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ckAV)
                     .addComponent(ckLLC))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(74, Short.MAX_VALUE))
         );
 
         panelOperators.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Operators", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
@@ -1238,6 +1227,13 @@ public class Principal extends AbstractPrincipalJFrame {
             }
         });
 
+        ckFeatureInteraction.setText("Feature Interaction");
+        ckFeatureInteraction.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ckFeatureInteractionActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout panelMutationsLayout = new javax.swing.GroupLayout(panelMutations);
         panelMutations.setLayout(panelMutationsLayout);
         panelMutationsLayout.setHorizontalGroup(
@@ -1245,14 +1241,17 @@ public class Principal extends AbstractPrincipalJFrame {
             .addGroup(panelMutationsLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(panelMutationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ckFeatureDrivenMutation)
-                    .addComponent(ckMoveMethodMutation)
-                    .addComponent(ckAddClassMutation))
-                .addGap(64, 64, 64)
-                .addGroup(panelMutationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ckMoveAttributeMutation)
-                    .addComponent(ckAddManagerClassMutation)
-                    .addComponent(ckMoveOperationMutation))
+                    .addGroup(panelMutationsLayout.createSequentialGroup()
+                        .addGroup(panelMutationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(ckFeatureDrivenMutation)
+                            .addComponent(ckMoveMethodMutation)
+                            .addComponent(ckAddClassMutation))
+                        .addGap(64, 64, 64)
+                        .addGroup(panelMutationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(ckMoveAttributeMutation)
+                            .addComponent(ckAddManagerClassMutation)
+                            .addComponent(ckMoveOperationMutation)))
+                    .addComponent(ckFeatureInteraction))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelMutationsLayout.setVerticalGroup(
@@ -1270,6 +1269,8 @@ public class Principal extends AbstractPrincipalJFrame {
                 .addGroup(panelMutationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ckAddClassMutation)
                     .addComponent(ckMoveAttributeMutation))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ckFeatureInteraction)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 

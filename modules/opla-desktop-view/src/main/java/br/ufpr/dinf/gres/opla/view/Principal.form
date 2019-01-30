@@ -874,13 +874,9 @@
                               <Component id="ckSVS" min="-2" max="-2" attributes="0"/>
                               <Component id="ckCBCS" min="-2" max="-2" attributes="0"/>
                               <Component id="ckWocsInterface" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" attributes="0">
-                                  <Component id="ckWocsClass" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
-                                  <Component id="ckFeatureInteraction" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="ckWocsClass" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="227" max="32767" attributes="0"/>
+                          <EmptySpace pref="433" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -892,7 +888,6 @@
                               <Component id="ckConventional" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="ckFeatureDriven" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="ckWocsClass" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="ckFeatureInteraction" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -923,7 +918,7 @@
                               <Component id="ckAV" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="ckLLC" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace pref="74" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1063,14 +1058,6 @@
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ckLLCActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JCheckBox" name="ckFeatureInteraction">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Feature Interaction"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ckFeatureInteractionActionPerformed"/>
                   </Events>
                 </Component>
               </SubComponents>
@@ -1220,15 +1207,20 @@
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="ckFeatureDrivenMutation" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="ckMoveMethodMutation" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="ckAddClassMutation" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="ckMoveAttributeMutation" min="-2" max="-2" attributes="0"/>
-                              <Component id="ckAddManagerClassMutation" min="-2" max="-2" attributes="0"/>
-                              <Component id="ckMoveOperationMutation" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="ckFeatureDrivenMutation" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ckMoveMethodMutation" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ckAddClassMutation" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="ckMoveAttributeMutation" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ckAddManagerClassMutation" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ckMoveOperationMutation" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Component id="ckFeatureInteraction" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
@@ -1252,6 +1244,8 @@
                               <Component id="ckAddClassMutation" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="ckMoveAttributeMutation" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="ckFeatureInteraction" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -1304,6 +1298,14 @@
                   </Properties>
                   <Events>
                     <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="ckMoveAttributeMutationItemStateChanged"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="ckFeatureInteraction">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Feature Interaction"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ckFeatureInteractionActionPerformed"/>
                   </Events>
                 </Component>
               </SubComponents>
